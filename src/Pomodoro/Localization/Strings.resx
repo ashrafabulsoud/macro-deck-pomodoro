@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- The default-language file. Every translation is checked against it and the fallback chain ends
+       here, so it is required even for a plugin that ships one language. Add a language by adding
+       Localization/Strings.<culture>.resx beside it (Strings.de.resx, Strings.pt-BR.resx).
+       A dotted key becomes a nested class: Actions.LogMessage.Name is Strings.Actions.LogMessage.Name(). -->
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Widget.Name" xml:space="preserve">
+    <value>Pomodoro</value>
+  </data>
+  <data name="Widget.Description" xml:space="preserve">
+    <value>A focus timer that alternates focus sessions with short and long breaks. Tap to start or pause, long press to reset.</value>
+  </data>
+  <data name="Phase.Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="Phase.ShortBreak" xml:space="preserve">
+    <value>Short break</value>
+  </data>
+  <data name="Phase.LongBreak" xml:space="preserve">
+    <value>Long break</value>
+  </data>
+  <data name="Face.Round" xml:space="preserve">
+    <value>Round {round} of {rounds}</value>
+    <comment>[round:int][rounds:int]</comment>
+  </data>
+  <data name="Face.CompletedToday" xml:space="preserve">
+    <value>{count} done today</value>
+    <comment>[count:int]</comment>
+  </data>
+  <data name="Face.FocusDone" xml:space="preserve">
+    <value>Focus done</value>
+  </data>
+  <data name="Face.BreakDone" xml:space="preserve">
+    <value>Break over</value>
+  </data>
+  <data name="Face.TapForBreak" xml:space="preserve">
+    <value>Tap to start your break</value>
+  </data>
+  <data name="Face.TapForFocus" xml:space="preserve">
+    <value>Tap to focus</value>
+  </data>
+  <data name="Config.Durations" xml:space="preserve">
+    <value>Durations</value>
+  </data>
+  <data name="Config.FocusMinutes" xml:space="preserve">
+    <value>Focus (minutes)</value>
+  </data>
+  <data name="Config.ShortBreakMinutes" xml:space="preserve">
+    <value>Short break (minutes)</value>
+  </data>
+  <data name="Config.LongBreakMinutes" xml:space="preserve">
+    <value>Long break (minutes)</value>
+  </data>
+  <data name="Config.RoundsBeforeLongBreak" xml:space="preserve">
+    <value>Focus rounds before a long break</value>
+  </data>
+  <data name="Config.AutoStartNext" xml:space="preserve">
+    <value>Start the next phase automatically</value>
+  </data>
+  <data name="Config.AutoStartNextHint" xml:space="preserve">
+    <value>When off, the tile flashes at the end of a phase and waits for a tap.</value>
+  </data>
+  <data name="Events.Category" xml:space="preserve">
+    <value>Pomodoro</value>
+  </data>
+  <data name="Events.PhaseStarted.Name" xml:space="preserve">
+    <value>Pomodoro phase started</value>
+  </data>
+  <data name="Events.PhaseStarted.Description" xml:space="preserve">
+    <value>A focus session or a break started.</value>
+  </data>
+  <data name="Events.PhaseFinished.Name" xml:space="preserve">
+    <value>Pomodoro phase finished</value>
+  </data>
+  <data name="Events.PhaseFinished.Description" xml:space="preserve">
+    <value>A focus session or a break ran out. Not raised when a phase is skipped or reset.</value>
+  </data>
+  <data name="Events.PomodoroCompleted.Name" xml:space="preserve">
+    <value>Pomodoro completed</value>
+  </data>
+  <data name="Events.PomodoroCompleted.Description" xml:space="preserve">
+    <value>A focus session ran to the end.</value>
+  </data>
+  <data name="Events.Parameters.Phase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="Events.Parameters.AnyPhase" xml:space="preserve">
+    <value>Any phase</value>
+  </data>
+  <data name="Events.Parameters.Round" xml:space="preserve">
+    <value>Round</value>
+  </data>
+  <data name="Events.Parameters.CompletedToday" xml:space="preserve">
+    <value>Completed today</value>
+  </data>
+  <data name="Events.Parameters.WidgetLabel" xml:space="preserve">
+    <value>Widget label</value>
+  </data>
+  <data name="Events.Parameters.AnyWidget" xml:space="preserve">
+    <value>Any Pomodoro widget</value>
+  </data>
+  <data name="Events.Parameters.WidgetId" xml:space="preserve">
+    <value>Widget id</value>
+  </data>
+  <data name="Config.NotifyOnPhaseEnd" xml:space="preserve">
+    <value>Show a desktop notification when a phase ends</value>
+  </data>
+  <data name="Notifications.FocusDone.Title" xml:space="preserve">
+    <value>Focus done</value>
+  </data>
+  <data name="Notifications.FocusDone.Message" xml:space="preserve">
+    <value>Time for a break. {count} done today.</value>
+    <comment>[count:int]</comment>
+  </data>
+  <data name="Notifications.BreakDone.Title" xml:space="preserve">
+    <value>Break over</value>
+  </data>
+  <data name="Notifications.BreakDone.Message" xml:space="preserve">
+    <value>Ready for the next focus session.</value>
+  </data>
+</root>

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "com.ashrafabulsoud.pomodoro",
+  "name": "Pomodoro",
+  "version": "1.0.0",
+  "description": "A Pomodoro focus timer widget: focus sessions alternate with short and long breaks, with events and optional desktop notifications at every phase change.",
+  "icon": "Assets/icon.svg",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/Pomodoro.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/Pomodoro.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "linux-x64": {
+      "executable": "runtimes/linux-x64/Pomodoro.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "ashrafabulsoud"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/ashrafabulsoud/macro-deck-pomodoro",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-0"
+  },
+  "permissions": [
+    "host:widget-types",
+    "events:publish",
+    "host:desktop-notifications"
+  ],
+  "ai": {
+    "interaction": false,
+    "generatedContent": false,
+    "generatedAssets": true
+  }
+}
