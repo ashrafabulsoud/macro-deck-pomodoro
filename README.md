@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ashrafabulsoud/macro-deck-pomodoro/releases/latest"><b>Download</b></a>
+  <a href="https://github.com/ashrafabulsoud/macro-deck-pomodoro/releases"><b>Download</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/ashrafabulsoud/macro-deck-pomodoro/issues/new?template=feedback.yml"><b>Share feedback</b></a>
   &nbsp;·&nbsp;
@@ -58,7 +58,7 @@ sessions with breaks in between: 25 minutes of focus, a 5 minute break, and afte
 You need **Macro Deck 3** on Windows (x64), macOS (Apple silicon) or Linux (x64).
 
 1. Download `com.ashrafabulsoud.pomodoro-<version>.macroDeckPlugin` from the
-   [latest release](https://github.com/ashrafabulsoud/macro-deck-pomodoro/releases/latest).
+   [latest release](https://github.com/ashrafabulsoud/macro-deck-pomodoro/releases).
 2. In Macro Deck, install it from the file (open the plugins page and choose to install a plugin from a
    file, or double-click the downloaded file if `.macroDeckPlugin` files open with Macro Deck).
 3. Macro Deck warns that the plugin is **not signed**. That is expected for a test version that does not come
