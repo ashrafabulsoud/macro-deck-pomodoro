@@ -3,7 +3,7 @@
   "manifestVersion": 1,
   "id": "com.ashrafabulsoud.pomodoro",
   "name": "Pomodoro",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "A Pomodoro focus timer widget: focus sessions alternate with short and long breaks, with events and optional desktop notifications at every phase change.",
   "icon": "Assets/icon.svg",
   "entrypoints": {
