@@ -1,8 +1,16 @@
 name: Release
 
+# Manual only while the plugin is in testing and not yet set up in the Creator Portal, so a tester release on
+# GitHub does not attempt a Store upload. Switch back to `release: types: [published]` before going to the Store.
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to publish, matching a release tag such as v1.0.0
+        required: true
+      changelog:
+        description: Release notes
+        required: false
 
 jobs:
   publish:
@@ -11,8 +19,8 @@ jobs:
       contents: read
       id-token: write
     with:
-      version: ${{ github.event.release.tag_name }}
+      version: ${{ inputs.version }}
       source: src/Pomodoro
       # Pinned to the SDK version; the workflow default resolves the CLI by SemVer order and can pick an older preview.
       cli-version: 3.0.0-beta.19
-      changelog: ${{ github.event.release.body }}
+      changelog: ${{ inputs.changelog }}
