@@ -1,0 +1,40 @@
+name: Share feedback
+description: Tell me how the widget works for you in daily use. Good or bad, everything helps.
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You do not need to have found a bug. Tell me how it fits into your day.
+  - type: dropdown
+    id: usage
+    attributes:
+      label: How long have you used it?
+      options:
+        - Tried it once
+        - A few days
+        - A week or more
+    validations:
+      required: true
+  - type: textarea
+    id: works-well
+    attributes:
+      label: What works well?
+  - type: textarea
+    id: annoying
+    attributes:
+      label: What is confusing or annoying?
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup
+      description: Durations you use, tile size, which screen you look at it on, automations you attached to its events.
+  - type: dropdown
+    id: recommend
+    attributes:
+      label: Would you keep using it?
+      options:
+        - "Yes"
+        - Maybe, if something changes
+        - "No"

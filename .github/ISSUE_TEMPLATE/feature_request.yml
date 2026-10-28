@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest something the widget should do.
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the situation first, then the idea. This helps find the simplest fix.
+      placeholder: I use two monitors and want the break to start a screen saver.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you use today

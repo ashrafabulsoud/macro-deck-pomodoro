@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the guide first
+    url: https://github.com/ashrafabulsoud/macro-deck-pomodoro#readme
+    about: Installing, settings, automations and known limitations.

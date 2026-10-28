@@ -1,0 +1,80 @@
+name: Bug report
+description: Something does not work the way the README says it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing the Pomodoro widget. The more precise the steps, the faster it gets fixed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+      placeholder: I tapped the tile while it was paused and the time jumped back to 25:00.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add the Pomodoro widget with focus set to 1 minute
+        2. Tap to start
+        3. Wait for the end of the phase
+        4. ...
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: Shown on the plugin's page in Macro Deck, or the name of the file you installed.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: macro-deck-version
+    attributes:
+      label: Macro Deck version
+      description: The version Macro Deck reports about itself.
+      placeholder: e.g. 3.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple silicon)
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Where were you looking at the tile?
+      multiple: true
+      options:
+        - Macro Deck desktop app
+        - Web client (phone or tablet browser)
+        - Companion app
+        - Hardware deck
+  - type: textarea
+    id: settings
+    attributes:
+      label: Widget settings
+      description: Durations, rounds, auto-start and notifications, if you changed them.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: Lines from Macro Deck's log viewer that mention Pomodoro, if any. They are formatted automatically.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots or a screen recording help a lot. Drag them into this box.
